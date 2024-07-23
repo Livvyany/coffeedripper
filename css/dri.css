@@ -1,0 +1,192 @@
+.dri1 {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper-canvas {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.circle {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #f88637 100%, rgba(253, 132, 32, 0) 100%);
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  mask-image: url(../svg/dri.png);
+  mask-position: center;
+  mask-size: contain;
+  z-index: 3;
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 環狀容器样式 */
+.rib {
+  width: 550px;
+  height: 550px;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: rotateCircle 18s linear infinite;
+}
+
+.rib:hover {
+  animation-play-state: paused;
+}
+
+/* 定义缩放高度的动画 */
+@keyframes scale-height {
+  0% {
+    transform: scaleY(0.7);
+  }
+  10% {
+    transform: scaleY(0.7);
+  }
+  30% {
+    transform: scaleY(1.2);
+  }
+  40% {
+    transform: scaleY(1.2);
+  }
+  60% {
+    transform: scaleY(1.7);
+  }
+  70% {
+    transform: scaleY(1.7);
+  }
+
+  100% {
+    transform: scale(0.69, 0.7);
+  }
+}
+
+.ribitem {
+  width: 12px;
+  height: 160px;
+  background: #e75f2d;
+  border: 2px solid #ffa13e;
+  border-radius: 2rem;
+  position: absolute;
+  bottom: 50%;
+  transform-origin: bottom;
+  animation: scale-height 10s linear infinite; /*ease-in-out*/
+}
+
+.rib-ro-0 {
+  transform: rotate(0deg);
+}
+.rib-ro-1 {
+  transform: rotate(30deg);
+}
+.rib-ro-2 {
+  transform: rotate(60deg);
+}
+.rib-ro-3 {
+  transform: rotate(90deg);
+}
+.rib-ro-4 {
+  transform: rotate(120deg);
+}
+.rib-ro-5 {
+  transform: rotate(150deg);
+}
+.rib-ro-6 {
+  transform: rotate(180deg);
+}
+.rib-ro-7 {
+  transform: rotate(210deg);
+}
+.rib-ro-8 {
+  transform: rotate(240deg);
+}
+.rib-ro-9 {
+  transform: rotate(270deg);
+}
+.rib-ro-10 {
+  transform: rotate(300deg);
+}
+.rib-ro-11 {
+  transform: rotate(330deg);
+}
+
+.waterdot-all {
+  position: absolute;
+  width: 576px; /* 調整容器大小 */
+  height: 576px; /* 調整容器大小 */
+  border: 12px solid #fd9f2dc2; /* 容器边框，可选 */
+  border-radius: 50%; /* 将容器变成圆形 */
+  overflow: hidden; /* 隐藏超出容器的内容 */
+  transform-origin: center;
+}
+.water-ro-1 {
+  width: 576px; /* 調整容器大小 */
+  height: 576px; /* 調整容器大小 */
+  transform-origin: center;
+}
+.water-ro-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  rotate: 130deg;
+  scale: 0.9;
+}
+
+.water-ro-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  rotate: 260deg;
+  scale: 1.1;
+}
+.waterdot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgb(62, 185, 241);
+  background-color: #00e1fa; /* 小圆的颜色，可选 */
+  border-radius: 50%; /* 将小圆变成圆形 */
+  animation: spiral 10s linear infinite; /* 应用动画，调整持续时间 */
+}
+
+@keyframes spiral {
+  0% {
+    transform: translate(-260px, 0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  75% {
+    transform: translate(-140px, 0px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-80px, 0);
+    opacity: 0;
+  }
+}
