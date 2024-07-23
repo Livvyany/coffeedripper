@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 引入自定義 css 文件 -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/dri.css" />
+    <!-- 引入XX  Observer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/OrbitControls.js"></script>
+    <!-- 引入 GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <!-- 引入 Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>coffee animation homepage</title>
+    <link rel="icon" href="image/dripper.png" type="image/png" />
+  </head>
+  <body>
+    <!--內文-->
+    <div class="container2">
+      <!--在styles.css-->
+      <div id="topcontrol-button">
+        <button class="tocard" id="tocard"><span class="a-title-cn">常見濾杯</span
+          ><span class="a-title-en">Common</span> </button>
+        <button class="toCustomization" id="toCustomization">
+          <span class="a-title-cn">製作濾杯</span
+            ><span class="a-title-en">Customization</span> 
+        </button>
+      </div>
+      <!--封面動畫-->
+      <section class="dri1">
+        <!--背景粒子-->
+        <div id="wrapper-canvas">
+          <!--濾杯肋骨變化-->
+          <div class="circle">
+            <item class="rib">
+              <div class="rib-ro-0"><div class="ribitem"></div></div>
+              <div class="rib-ro-1"><div class="ribitem"></div></div>
+              <div class="rib-ro-2"><div class="ribitem"></div></div>
+              <div class="rib-ro-3"><div class="ribitem"></div></div>
+              <div class="rib-ro-4"><div class="ribitem"></div></div>
+              <div class="rib-ro-5"><div class="ribitem"></div></div>
+              <div class="rib-ro-6"><div class="ribitem"></div></div>
+              <div class="rib-ro-7"><div class="ribitem"></div></div>
+              <div class="rib-ro-8"><div class="ribitem"></div></div>
+              <div class="rib-ro-9"><div class="ribitem"></div></div>
+              <div class="rib-ro-10"><div class="ribitem"></div></div>
+              <div class="rib-ro-11"><div class="ribitem"></div></div>
+              <div class="waterdot-all">
+                <div class="water-ro-1"><div class="waterdot"></div></div>
+                <div class="water-ro-2"><div class="waterdot"></div></div>
+                <div class="water-ro-3"><div class="waterdot"></div></div>
+              </div>
+            </item>
+          </div>
+        </div>
+      </section>
+
+
+    <!--原點鼠標樣式-->
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top">Top</button>
+
+    <!-- 引入自定義 JavaScript 文件 -->
+    <script type="module" src="js/glft.js"></script>
+    <script type="module" src="js/point.js"></script>
+    <script type="module" src="js/jquery-3.7.1.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="text/javascript" src="js/matter.js"></script>
+    <script type="module" src="js/powder.js"></script>
+  </body>
+</html>

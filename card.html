@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 引入自定義 css 文件 -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/dri.css" />
+    <!-- 引入XX  Observer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/controls/OrbitControls.js"></script>
+    <!-- 引入 GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <!-- 引入 Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>dripperinfor</title>
+    <link rel="icon" href="image/F-dripper.png" type="image/png" />
+  </head>
+  <body>
+
+    <!--標題-->
+    <header>
+      <div class="parentcontainer1">
+        <div class="container1">
+          <div id="Title1">
+            <h1>HOME</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+   
+      <!--卡片盒-->
+      <section class="wrapper" id="targetSection">
+        <!--左鍵'-->
+        <div class="arrow left">&lt;</div>
+        <!--右鍵'-->
+        <div class="arrow right">&gt;</div>
+        <!--卡片-->
+        <div class="box1">
+          <!--C1-->
+          <input type="radio" name="slide" id="c1" />
+          <label
+            for="c1"
+            class="card"
+            data-header="April Dripper"
+            data-body="專為淺焙而生的 April Brewer以「均勻萃取」為目標。平底的設計，底部有三個凸起類似氣囊，可以控制沖煮速度和萃取效果，味道的平衡、乾淨、香甜。底座的空氣口，可以看見咖啡滴濾速度以調整注水流速，可以直接沖煮到一個定製的杯子裡，配有蓋子可以保留咖啡的香氣和溫度。"
+          >
+            <div class="row">
+              <div class="icon">April</div>
+            </div>
+          </label>
+          <!--C2-->
+          <input type="radio" name="slide" id="c2" />
+          <label
+            for="c2"
+            class="card"
+            data-header="CAFEC 花瓣型濾杯"
+            data-body="花瓣型濾杯以獨特的肋骨結構，有效地創造了沖煮變速的效果。與一般濾杯相比，花瓣型的肋骨深度更深，使濾紙與濾杯之間形成足夠的空氣層，有助於保持水流的流暢度。在沖煮過程中，當水位達到約6~7分高時，由於肋骨的變化，流速降低，增加了咖啡粉和水之間的接觸時間。這種特殊的結構有助於更全面地萃取咖啡風味，尤其是甜感更為明顯。"
+          >
+            <div class="row">
+              <div class="icon">CAFEC</div>
+            </div>
+          </label>
+          <!--C3-->
+          <input type="radio" name="slide" id="c3"  />
+          <label
+            for="c3"
+            class="card"
+            data-header="KONO"
+            data-body="日本首個錐形濾杯至今為止有三代版本皆為樹脂材質，第一代肋骨相對最長，第三代肋骨最短。內部皆屬較短的肋骨，當注入熱水，濾杯上方部份因為沒有肋骨所以會跟濾紙緊貼一起，可以防止咖啡中不良的泡沫成分向濾壁橫流，讓萃取出來的咖啡液可自然集中在中心流下，減少咖啡液帶有不良味道。流速較V60慢，因此能沖煮出較濃厚的風味。"
+          >
+            <div class="row">
+              <div class="icon">KONO</div>
+            </div>
+          </label>
+          <!--C4-->
+          <input type="radio" name="slide" id="c4" />
+          <label
+            for="c4"
+            class="card"
+            data-header="GRAYCANO"
+            data-body="熔岩肋骨不對稱的肋骨打破可能形成的任何空氣和水通道，水能在V形的間隙之間自由流動，使咖啡床均勻濕潤，確保咖啡均勻萃取，並利用鋁的低熱容量，搭配陶瓷塗層隔絕金屬，快速達到高溫並在整個沖泡過程中保持高溫，使咖啡的果香和花香更加強烈。"
+          >
+            <div class="row">
+              <div class="icon">GRAYCANO</div>
+            </div>
+          </label>
+          <!--C5-->
+          <input type="radio" name="slide" id="c5" />
+          <label
+            for="c5"
+            class="card"
+            data-header="Hario V60"
+            data-body="市面上相當受歡迎的錐形濾杯，因為濾杯角度接近60度，因此稱為V60。具有螺旋狀的24條長短肋骨能夠產生扭擠的效果，促進可溶性物質的釋放，同時增加水流速度。這種均勻且迅速的萃取方式帶來口感較為乾淨清爽的風味，並能提取出較強烈的果香酸味。"
+          >
+            <div class="row">
+              <div class="icon">Hario V60</div>
+            </div>
+          </label>
+          <!--C6-->
+          <input type="radio" name="slide" id="c6" />
+          <label
+            for="c6"
+            class="card"
+            data-header="星芒濾杯"
+            data-body="變速式設計，16條長肋骨貫穿頂部上深下淺，讓後段流速趨緩，避免細粉往中間堆積，雜味出現，16條短肋骨在上方，當水位淹高時，能加快流速，有效提高前段萃取，強化咖啡乾淨度、甜度，濾紙可以完全貼服濾杯，減少塞粉和過度萃取情況。流速將較於V60更快速。"
+          >
+            <div class="row">
+              <div class="icon">星芒濾杯</div>
+            </div>
+          </label>
+          <!--C7-->
+          <input type="radio" name="slide" id="c7" />
+          <label
+            for="c7"
+            class="card"
+            data-header="ORIGAMI"
+            data-body="摺紙濾杯是一種以折紙藝術為靈感的獨特濾杯，擁有20個凹槽肋骨結構，使整體樣貌呈現傳統摺紙造型。濾杯通用於一般濾紙和波浪濾紙，特殊的摺紙結構不僅美觀，搭配底部大出水孔，使沖煮時水流通過咖啡粉會更迅速，降低阻塞的可能性，同時創造出乾淨且層次豐富的咖啡風味。"
+          >
+            <div class="row">
+              <div class="icon">ORIGAMI</div>
+            </div>
+          </label>
+          <!--C8-->
+          <input type="radio" name="slide" id="c8" />
+          <label
+            for="c8"
+            class="card"
+            data-header="Melitta"
+            data-body="公司創辦人Melitta Bentz發明咖啡濾杯並獲得專利。發展至今Melitta梯形濾杯底部出水孔一到四孔皆有，流速穩定而和緩，適合深焙的豆子。"
+          >
+            <div class="row">
+              <div class="icon">Melitta</div>
+            </div>
+          </label>
+          <!--C9-->
+          <input type="radio" name="slide" id="c9" />
+          <label
+            for="c9"
+            class="card"
+            data-header="Kalita Wave"
+            data-body="以無肋骨的獨特設計而聞名，濾杯搭配波浪狀的濾紙與濾杯壁之間形成空間，搭配底部三個小型出水孔。其平坦的底面有助於水流均勻穿過咖啡粉層，實現均勻且無雜味的沖煮效果。濾杯流速相對較慢，呈現出一種浸泡式的沖煮風格，穩定性高難有層次上的變化，適合製作沖煮時間較長、萃取時間較久的咖啡，可以呈現出溫和均勻口感。"
+          >
+            <div class="row">
+              <div class="icon">Kalita Wave</div>
+            </div>
+          </label>
+          <!--C10-->
+          <input type="radio" name="slide" id="c10" />
+          <label
+            for="c10"
+            class="card"
+            data-header="Orea"
+            data-body="將濾杯變成一組設備，使用模組化系統來連接和拆卸不同的底部。濾杯角度有73度與65度兩種選項，在濾杯連接點高度設置比一般濾杯高，因此對於底部可進行更多元的設計，讓底部零件的更換改變濾杯的結構，有三種平底設計一種圓錐可以選擇，讓平底濾杯產生更多變化，相較於普通平底濾杯有著較大的出水口，產生穩定又快速的萃取，產生清澈度、圓潤酸度的口感。針對濾紙部分，特別設計符合濾杯造型的壓形用具，讓濾紙完全以濾杯的造型成形。"
+          >
+            <div class="row">
+              <div class="icon">Orea</div>
+            </div>
+          </label>
+          <!--C11-->
+          <input type="radio" name="slide" id="c11" />
+          <label
+            for="c11"
+            class="card"
+            data-header="Clever"
+            data-body="不同於一般濾杯，聰明濾杯為「直接浸泡過濾」的萃取概念，底部配有活塞閥，當注水時水壓會使活塞閥自動密合止水，咖啡粉會浸泡於水中，浸泡時間到再將濾杯置於馬克杯上，底盤受到按壓使活塞閥開啟，咖啡即會緩緩流入杯中，拿起就會再次關閉，同時兼具法式濾壓壺與手沖濾杯的優點。"
+          >
+            <div class="row">
+              <div class="icon">Clever</div>
+            </div>
+          </label>
+          <!--C12-->
+          <input type="radio" name="slide" id="c12" />
+          <label
+            for="c12"
+            class="card"
+            data-header="Switch"
+            data-body="延續V60造型，並在出水口的位置設計閥門技術，一個特殊的鋼球可以讓水停止或繼續滴濾，是結合滴濾式和浸泡式咖啡的沖煮過程，讓沖煮有更多種可能性。"
+          >
+            <div class="row">
+              <div class="icon">Switch</div>
+            </div>
+          </label>
+        </div>
+
+        <!--詳細資訊欄'-->
+        <div class="box2">
+          <h1>點擊上方圖片以顯示詳細資訊</h1>
+          <h4></h4>
+          <p></p>
+        </div>
+      </section>
+    </div>
+
+    <!--原點鼠標樣式-->
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top">Top</button>
+
+    <!-- 引入自定義 JavaScript 文件 -->
+    <script type="module" src="js/glft.js"></script>
+    <script type="module" src="js/point.js"></script>
+    <script type="module" src="js/jquery-3.7.1.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <script type="text/javascript" src="js/matter.js"></script>
+    <script type="module" src="js/powder.js"></script>
+  </body>
+</html>
