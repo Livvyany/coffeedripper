@@ -147,35 +147,35 @@ input:checked + label {
   background-image: url("../image/card/April.jpg");
 }
 .card[for="c2"] {
-  background-image: url("/project-root/../image/card/CAFEC.jpg");
+  background-image: url("../image/card/CAFEC.jpg");
 }
 .card[for="c3"] {
-  background-image: url("/project-root/../image/card/kono.jpg");
+  background-image: url("../image/card/kono.jpg");
 }
 .card[for="c4"] {
-  background-image: url("/project-root/../image/card/GRAYCANO.jpg");
+  background-image: url("../image/card/GRAYCANO.jpg");
 }
 .card[for="c5"] {
-  background-image: url("/project-root/../image/card/Hario-V60.jpg");
+  background-image: url("../image/card/Hario-V60.jpg");
 }
 .card[for="c6"] {
-  background-image: url("/project-root/../image/card/Start.jpg");
+  background-image: url("../image/card/Start.jpg");
 }
 .card[for="c7"] {
-  background-image: url("/project-root/../image/card/ORIGAMI.jpg");
+  background-image: url("../image/card/ORIGAMI.jpg");
 }
 .card[for="c8"] {
-  background-image: url("/project-root/../image/card/Melitta.jpg");
+  background-image: url("../image/card/Melitta.jpg");
 }
 .card[for="c9"] {
-  background-image: url("/project-root/../image/card/Kalita.jpg");
+  background-image: url(/project-root/../image/card/Kalita.jpg");
 }
 .card[for="c10"] {
-  background-image: url("/project-root/../image/card/OREA.jpg");
+  background-image: url("../image/card/OREA.jpg");
 }
 .card[for="c11"] {
-  background-image: url("/project-root/../image/card/Clever.jpg");
+  background-image: url("../image/card/Clever.jpg");
 }
 .card[for="c12"] {
-  background-image: url("/project-root/../image/card/Switch.jpg");
+  background-image: url("../image/card/Switch.jpg");
 }
