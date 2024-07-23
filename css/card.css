@@ -168,7 +168,7 @@ input:checked + label {
   background-image: url("../image/card/Melitta.jpg");
 }
 .card[for="c9"] {
-  background-image: url(/project-root/../image/card/Kalita.jpg");
+  background-image: url("../image/card/Kalita.jpg");
 }
 .card[for="c10"] {
   background-image: url("../image/card/OREA.jpg");
