@@ -455,7 +455,7 @@ label {
   width: 20px;
   height: 20px; /* 根據圖片的尺寸調整 */
   border-radius: 7.5px;
-  background-image: url("/project-root/../image/bar/been-02.png");
+  background-image: url("../image/bar/been-02.png");
   background-size: cover; /* 使圖片覆蓋整個滑塊 */
   cursor: pointer;
   transition: background 0.1s ease; /* 增加滑塊平滑過度 */
