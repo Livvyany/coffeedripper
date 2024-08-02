@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans+TC:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none; /*預設鼠標顯示*/
+}
+
+body {
+  background-color: #ff8888;
+}
+
+/*----------------------------字形設定----------------------------*/
+.c-title-cn {
+  display: block;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 25px;
+  color: #ff8080;
+  letter-spacing: 1px; /* 設置文字的間隔，可以根據需要調整數值 */
+}
+.a-title-cn {
+  display: block;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  color: #ee5050;
+  letter-spacing: 1px; /* 設置文字的間隔，可以根據需要調整數值 */
+}
+.a-title-en {
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 8px;
+  color: #ee5050;
+  letter-spacing: 1px; /* 設置文字的間隔，可以根據需要調整數值 */
+}
+.c-h4 {
+  display: block;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 20px;
+  color: #ee5050;
+  letter-spacing: 5px; /* 設置文字的間隔，可以根據需要調整數值 */
+}
+.e-h4 {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #ee5050;
+}
+
+.r-h5 {
+  display: block;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+  color: #ee5050;
+}
+.u-h5 {
+  display: block;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+}
+/*----------------------------鼠標設定----------------------------*/
+#cursor {
+  position: absolute;
+  background-color: #4e1000;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9;
+}
+
+#cursor-border {
+  position: absolute;
+  background-color: transparent;
+  border: 2px solid #f53636;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: all 0.2s ease-out;
+  z-index: 9;
+}
+
+/*----------------------------滑軌設定----------------------------*/
+::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+/* 滑軌樣式-滑块 */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#f8f8da, #929091);
+  border: 0.15em solid transparent;
+  border-radius: 20px; /* 圆角 */
+  background-clip: content-box;
+}
+/* 滑軌樣式-按下時 */
+::-webkit-scrollbar-thumb:hover {
+  background: #fdfdae; /* 悬停时改变滑块的背景色 */
+}
+/* 设置角部分的背景色为透明 */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/*----------------------------回到頂部----------------------------*/
+/* 回到頂部 */
+#backToTop {
+  display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 10; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #eb4141ce; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  width: 50px;
+  height: 50px;
+  border-radius: 90% 90% 80% 80% / 100% 100% 50% 50%;
+  font-size: 16px; /* Increase font size */
+  text-align: center;
+  line-height: 1;
+  transition: transform 0.4s ease;
+}
+
+#backToTop:hover {
+  background-color: #ff2727e3; /* Add a dark-grey background on hover */
+  transform: scale(1.1, 1.1);
+}
+
+/*位置按鈕*/
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#topcontrol-button button {
+  color: #6c3a2a; /* 文字顏色 */
+  border: none; /* 隐藏按钮的外边框 */
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  width: 150px;
+  aspect-ratio: 1;
+  background: none;
+  box-shadow: inset 20px 20px 20px #0001, inset -20px -20px 25px #ffffffe5,
+    25px 25px 25px #0000000a, 25px 25px 30px #0000000a;
+  border-radius: 41% 59% 44% 56% / 46% 56% 44% 54%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+  z-index: 3;
+  transition: 0.3s ease;
+}
+
+/*----------------------------!圖示說明----------------------------*/
+.tooltip {
+  position: relative;
+  top: 30px;
+  left: 10px;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #ff7c7c;
+  color: #fdfdfd;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* 上移 */
+  left: 50%;
+  margin-left: -20px; /* 偏移一半寬度 */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 10px; /* 設定字體大小 */
+  line-height: 1.5; /* 設定行間距 */
+  letter-spacing: 0.8px; /* 設定字母間距 */
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%; /* 下方 */
+  left: 8%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #ff7c7c transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-icon {
+  width: 16px; /* 圖示大小 */
+  height: 16px;
+}
+/*--------------------!圖示step 2--------------------*/
+.tooltip-sli {
+  position: relative;
+  display: inline-block;
+}
+.tooltip-sli .tooltip-slitext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #ff7c7c;
+  color: #fdfdfd;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  left: 190%;
+  margin-top: -20px; /* 偏移一半寬度 */
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 10px; /* 設定字體大小 */
+  line-height: 1.5; /* 設定行間距 */
+  letter-spacing: 0.8px; /* 設定字母間距 */
+}
+
+.tooltip-sli .tooltip-slitext::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -5%;
+  margin-left: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent#ff7c7c transparent transparent;
+}
+
+.tooltip-sli:hover .tooltip-slitext {
+  visibility: visible;
+  opacity: 1;
+}
+/*----------------------------標題----------------------------*/
+.section-one {
+  width: 1920px;
+  height: 980px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#make-dripper {
+  width: 500px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+#make-dripper:hover {
+  transform: scale(1.1);
+}
+#make-dripper:active {
+  transform: scale(0.9);
+}
+/*----------------------------數據調整區----------------------------*/
+.section-two {
+  width: 1920px;
+  height: 980px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-box {
+  width: 1520px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-one {
+  width: 300px;
+  height: 600px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #f53636;
+  border-radius: 25px;
+}
+.step-text {
+  width: 250px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-one-checkbox {
+  width: 250px;
+  height: 100px;
+  display: flex;
+}
+/*----------------------勾選環動畫----------------------*/
+:root {
+  /*- --bg:#465#7ed7c1 ;*/
+  --ring-one: #ffecd6;
+  --ring-two: #fd293b;
+}
+
+.ring {
+  width: 40px;
+  height: 20px;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.ring::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--ring-one);
+  border-radius: 20px;
+  right: 0;
+  transition: 1s;
+}
+.ring::after {
+  content: "";
+  position: absolute;
+  width: 7.5px;
+  height: 7.5px;
+  border: 2px solid var(--ring-two);
+  border-radius: 20px;
+  left: 1px;
+  transition: 1s;
+}
+.checkbox:checked + .ring::before {
+  width: 10px;
+  height: 10px;
+  right: 1.2px;
+}
+.checkbox:checked + .ring::after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.checkbox {
+  display: none;
+}
+
+/*----------------------數據調整區---------------------*/
+.step-two {
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #f53636;
+  border-radius: 25px;
+}
+
+.slider-container {
+  width: 100%;
+  height: 120px;
+  margin-bottom: -5px;
+  animation: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider-box {
+  width: 70%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.slider-num {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 調整條-通用樣式 */
+.slider {
+  -webkit-appearance: none; /* 重置默認樣式 */
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 8px;
+  background: #ff9d96;
+  border: 1px double #fde8d0;
+  transition: border 0.2s;
+}
+
+.slider:hover {
+  border: 2px solid #a57271; /* 滑鼠滑過時改變邊框樣式和顏色 */
+}
+.slider:active {
+  border: 2px solid #fd6a60; /* 點擊時改變邊框樣式和顏色 */
+}
+
+/* 滑塊 */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* 重置默認樣式 */
+  appearance: none;
+  width: 20px;
+  height: 20px; /* 根據圖片的尺寸調整 */
+  border-radius: 7.5px;
+  background-image: url("/project-root/../image/bar/been-02.png");
+  background-size: cover; /* 使圖片覆蓋整個滑塊 */
+  cursor: pointer;
+  transition: background 0.1s ease; /* 增加滑塊平滑過度 */
+}
+.slider::-webkit-slider-thumb:hover {
+  transform: rotate(30deg); /* 滑鼠滑過時旋轉 */
+}
+.slider::-webkit-slider-thumb:active {
+  width: 24px;
+  height: 24px;
+}
+
+.value {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*----------------------數據確認區---------------------*/
+.step-three {
+  width: 300px;
+  height: 600px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #f53636;
+  border-radius: 25px;
+}
+
+.checked-data {
+  width: 250px;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.checked-data p {
+  margin-right: 20px;
+}
+
+#confirmButton {
+  width: 120px;
+  padding: 8px;
+  border: 0px double #fdc4c4;
+  border-radius: 70% 30% 72% 28% / 52% 51% 49% 48%;
+  background-color: #f8e6e6;
+  box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  top: 10px;
+}
+#confirmButton:hover {
+  border-radius: 61% 39% 35% 65% / 49% 52% 48% 51%;
+  background-color: #ffc3c2;
+}
+
+/*----------------------------結果資訊圖表區----------------------------*/
+.section-three {
+  width: 1920px;
+  height: 980px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step-four {
+  width: 1520px;
+  height: 880px;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #f53636;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.information {
+  width: 1520px;
+  height: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container {
+  width: 560px;
+  height: 760px;
+  text-align: center;
+  background-position: center; /*圖片置中*/
+  background-size: cover; /*圖片填滿*/
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  margin-right: 30px;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+#canvas-container {
+  width: 800px;
+  height: 760px;
+  border-radius: 25px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+/*----------------------------網頁底部文字區----------------------------*/
+.section-four {
+  width: 1920px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.down-text {
+  width: 500px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.down-text p {
+  margin-bottom: 10px;
+}
