@@ -581,7 +581,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 7,
     closestGroupNumber: 7,
     newGroupNumber: 55,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次069000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 69_濾杯結構.jpg",
     modelpath: "./assets/55.glb",
   },
   {
@@ -589,7 +589,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 8,
     closestGroupNumber: 5,
     newGroupNumber: 56,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次070000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 70_濾杯結構.jpg",
     modelpath: "./assets/56.glb",
   },
   {
@@ -597,7 +597,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 8,
     closestGroupNumber: 8,
     newGroupNumber: 56,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次071000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 71_濾杯結構.jpg",
     modelpath: "./assets/56.glb",
   },
   {
@@ -605,7 +605,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 5,
     newGroupNumber: 57,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次072000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 72_濾杯結構.jpg",
     modelpath: "./assets/57.glb",
   },
   {
@@ -613,7 +613,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 9,
     newGroupNumber: 57,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次073000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 73_濾杯結構.jpg",
     modelpath: "./assets/57.glb",
   },
   {
@@ -621,7 +621,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 5,
     newGroupNumber: 58,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次074000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 74_濾杯結構.jpg",
     modelpath: "./assets/58.glb",
   },
   {
@@ -629,7 +629,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 10,
     newGroupNumber: 58,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次075000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 75_濾杯結構.jpg",
     modelpath: "./assets/58.glb",
   },
   {
@@ -637,7 +637,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 6,
     closestGroupNumber: 6,
     newGroupNumber: 59,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次076000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 76_濾杯結構.jpg",
     modelpath: "./assets/59.glb",
   },
   {
@@ -645,7 +645,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 7,
     closestGroupNumber: 6,
     newGroupNumber: 60,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次077000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 77_濾杯結構.jpg",
     modelpath: "./assets/60.glb",
   },
   {
@@ -653,7 +653,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 7,
     closestGroupNumber: 7,
     newGroupNumber: 60,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次078000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 78_濾杯結構.jpg",
     modelpath: "./assets/60.glb",
   },
   {
@@ -661,7 +661,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 8,
     closestGroupNumber: 8,
     newGroupNumber: 61,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次079000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 79_濾杯結構.jpg",
     modelpath: "./assets/61.glb",
   },
   {
@@ -669,7 +669,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 8,
     closestGroupNumber: 6,
     newGroupNumber: 62,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次080000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 80_濾杯結構.jpg",
     modelpath: "./assets/62.glb",
   },
   {
@@ -677,7 +677,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 9,
     newGroupNumber: 63,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次081000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 81_濾杯結構.jpg",
     modelpath: "./assets/63.glb",
   },
   {
@@ -685,7 +685,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 6,
     newGroupNumber: 64,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次082000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 82_濾杯結構.jpg",
     modelpath: "./assets/64.glb",
   },
   {
@@ -693,7 +693,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 10,
     newGroupNumber: 65,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次083000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 83_濾杯結構.jpg",
     modelpath: "./assets/65.glb",
   },
   {
@@ -701,7 +701,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 6,
     newGroupNumber: 66,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次084000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 84_濾杯結構.jpg",
     modelpath: "./assets/66.glb",
   },
   {
@@ -709,7 +709,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 7,
     closestGroupNumber: 7,
     newGroupNumber: 67,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次085000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 85_濾杯結構.jpg",
     modelpath: "./assets/67.glb",
   },
   {
@@ -717,7 +717,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 8,
     closestGroupNumber: 8,
     newGroupNumber: 68,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次086000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 86_濾杯結構.jpg",
     modelpath: "./assets/68.glb",
   },
   {
@@ -725,7 +725,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 8,
     closestGroupNumber: 7,
     newGroupNumber: 69,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次087000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 87_濾杯結構.jpg",
     modelpath: "./assets/69.glb",
   },
   {
@@ -733,7 +733,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 9,
     newGroupNumber: 70,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次088000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 88_濾杯結構.jpg",
     modelpath: "./assets/70.glb",
   },
   {
@@ -741,7 +741,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 7,
     newGroupNumber: 71,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次089000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 89_濾杯結構.jpg",
     modelpath: "./assets/71.glb",
   },
   {
@@ -749,7 +749,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 10,
     newGroupNumber: 72,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次090000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 90_濾杯結構.jpg",
     modelpath: "./assets/72.glb",
   },
   {
@@ -757,7 +757,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 7,
     newGroupNumber: 73,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次091000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 91_濾杯結構.jpg",
     modelpath: "./assets/73.glb",
   },
   {
@@ -765,7 +765,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 8,
     closestGroupNumber: 8,
     newGroupNumber: 74,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次092000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 92_濾杯結構.jpg",
     modelpath: "./assets/74.glb",
   },
   {
@@ -773,7 +773,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 8,
     newGroupNumber: 75,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次093000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 93_濾杯結構.jpg",
     modelpath: "./assets/75.glb",
   },
   {
@@ -781,7 +781,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 9,
     newGroupNumber: 75,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次094000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 94_濾杯結構.jpg",
     modelpath: "./assets/75.glb",
   },
   {
@@ -789,7 +789,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 8,
     newGroupNumber: 76,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次095000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 95_濾杯結構.jpg",
     modelpath: "./assets/76.glb",
   },
   {
@@ -797,7 +797,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 10,
     newGroupNumber: 76,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次096000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 96_濾杯結構.jpg",
     modelpath: "./assets/76.glb",
   },
   {
@@ -805,7 +805,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 9,
     closestGroupNumber: 9,
     newGroupNumber: 77,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次097000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 97_濾杯結構.jpg",
     modelpath: "./assets/77.glb",
   },
   {
@@ -813,7 +813,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 9,
     newGroupNumber: 78,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次098000_工作區域 1.jpg",
+    path: "image/dripperinfro/資料組 98_濾杯結構.jpg",
     modelpath: "./assets/78.glb",
   },
   {
@@ -821,7 +821,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 10,
     newGroupNumber: 78,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次099000_工作區域 1.jpg",
+    path: "image/資料組 99_濾杯結構.jpg",
     modelpath: "./assets/78.glb",
   },
   {
@@ -829,7 +829,7 @@ const data2 = [
     bestNonNegativeGroupNumber: 10,
     closestGroupNumber: 10,
     newGroupNumber: 79,
-    path: "image/dripperinfro/論文-濾杯結構說明圖-批次100000_工作區域 1.jpg",
+    path: "image/資料組 100_濾杯結構.jpg",
     modelpath: "./assets/79.glb",
   },
 ];
