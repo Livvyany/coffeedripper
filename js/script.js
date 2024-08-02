@@ -43,8 +43,8 @@ $(document).ready(function () {
     window.open("card.html", "_blank");
   });
   $("#toCustomization").click(function () {
-    // 在新窗口中打開 cofee.html 頁面
-    window.open("cofee.html", "_blank");
+    // 在新窗口中打開 coffee.html 頁面
+    window.open("coffee.html", "_blank");
   });
   $("#Title1").click(function () {
     // 返回到 index.html 页面
