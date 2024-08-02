@@ -1,7 +1,10 @@
 var sliders = [
   { id: "slider0", valueId: "value0", property: "acidity" },
+  { id: "slider0", valueId: "value0-1", property: "acidity" },
   { id: "slider1", valueId: "value1", property: "sweetness" },
+  { id: "slider1", valueId: "value1-1", property: "sweetness" },
   { id: "slider2", valueId: "value2", property: "taste" },
+  { id: "slider2", valueId: "value2-1", property: "taste" },
 ];
 
 sliders.forEach(function (slider) {
@@ -12,6 +15,22 @@ sliders.forEach(function (slider) {
 
 /////////////////////--監聽多選框的勾選事件--/////////////////////
 var checkboxes = document.querySelectorAll(".roastingOption");
+var resultDisplay = document.getElementById("roast-result");
+
+////--顯示焙度文字--//////
+function updateResult() {
+  var selectedOptions = [];
+  checkboxes.forEach(function (checkbox) {
+    if (checkbox.checked) {
+      selectedOptions.push(checkbox.value);
+    }
+  });
+  if (selectedOptions.length > 0) {
+    resultDisplay.textContent = " " + selectedOptions.join(", ");
+  } else {
+    resultDisplay.textContent = "";
+  }
+}
 
 checkboxes.forEach(function (checkbox) {
   checkbox.addEventListener("change", function () {
@@ -35,6 +54,7 @@ checkboxes.forEach(function (checkbox) {
         document.getElementById("Roastingother").checked = true;
       }
     }
+    updateResult();
   });
 });
 
@@ -46,8 +66,8 @@ let modelRotationEnabled = true; // 控制模型是否旋轉的標誌
 function init() {
   // 創建渲染器並設置 alpha: true 以支持透明背景
   renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-  const initialWidth = 400; // 設置初始大小-寬度
-  const initialHeight = 400; //設置初始大小-高度
+  const initialWidth = 800; // 設置初始大小-寬度
+  const initialHeight = 800; //設置初始大小-高度
   renderer.setSize(initialWidth, initialHeight);
   document.getElementById("canvas-container").appendChild(renderer.domElement);
 
@@ -205,11 +225,23 @@ function animate() {
 
 ///////////////////////////////////////////////////////////////////////////////
 //////////////////--讀取網頁數據--//////////////////
+
+document.getElementById("make-dripper").addEventListener("click", function () {
+  // 跳轉到 .section-two
+  var sectionTwo = document.querySelector(".section-two");
+  sectionTwo.scrollIntoView({ behavior: "smooth" });
+});
+
 document.getElementById("confirmButton").addEventListener("click", function () {
+  // 清空表格數據
   var resultsTableBody = document
     .getElementById("resultsTable")
     .querySelector("tbody");
   resultsTableBody.innerHTML = ""; // 清空現有的表格數據
+
+  // 跳轉到 .step-four
+  var stepFour = document.querySelector(".step-four");
+  stepFour.scrollIntoView({ behavior: "smooth" });
 
   // 根據勾選的焙度選項決定要顯示的組別範圍
   var startIndex = 1;
@@ -376,8 +408,8 @@ document.getElementById("confirmButton").addEventListener("click", function () {
       message += "最接近組別：" + closestGroupNumber;
       resultsArray.push(closestGroupNumber);
     }
-
-    //--顯示提示框--///alert(message);
+    //--顯示提示框--///
+    alert(message);
 
     ///////////////////--動態更新模型路徑--//////////////////////////////
     var selectedData = data2.find(function (item) {
