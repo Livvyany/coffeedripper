@@ -304,6 +304,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f5deb2;
 }
 
 .data-box {
