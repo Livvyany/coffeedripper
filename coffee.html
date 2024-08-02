@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入自定義 css 文件 -->
+    <link rel="stylesheet" href="css/coffee-styles.css" />
+    <link rel="stylesheet" href="css/dri.css" />
+    <!-- 引入 Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- 引入 RGBELoader -->
+    <script src="https://threejs.org/examples/js/loaders/RGBELoader.js"></script>
+    <!-- 引入 GLTFLoader -->
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- 引入 OrbitControls -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <title>打造屬於你的咖啡濾杯</title>
+    <link rel="icon" href="image/論文 _drippericon.png" type="image/png" />
+  </head>
+  <body>
+    <!--標題-->
+    <section class="section-one">
+      <img
+        id="make-dripper"
+        src="image/makethedripper.png"
+        alt="make the dripper"
+      />
+    </section>
+
+    <!--數據調整區-->
+    <section class="section-two">
+      <nav class="data-box">
+        
+         <!--焙度選項--></p>
+        <div class="step-one">
+          <item class="step-text">
+          <p class="e-h4">Step 1</p>
+          <p class="r-h5">選擇喜歡的咖啡豆烘焙度</p>
+        </item>
+          <form>
+            <tr class="checkbox-row">
+              <item class="step-one-checkbox">
+                <input
+                  type="checkbox"
+                  id="Roastinglight"
+                  name="Roastinglight"
+                  value="淺焙"
+                  class="checkbox roastingOption"
+                />
+                <label for="Roastinglight" class="ring"></label>
+                <p>
+                  <span class="a-title-cn">淺焙</span
+                  ><span class="a-title-en">Cinnamon Roast</span>
+                </p>
+              </item>
+              <item class="step-one-checkbox">
+                <input
+                  type="checkbox"
+                  id="Roastingmid"
+                  name="Roastingmid"
+                  value="中焙"
+                  class="checkbox roastingOption"
+                />
+                <label for="Roastingmid" class="ring"></label>
+                <p>
+                  <span class="a-title-cn">中焙</span>
+                  <span class="a-title-en">Medium Roast</span>
+                </p>
+              </item>
+              <item class="step-one-checkbox">
+                <input
+                  type="checkbox"
+                  id="Roastingdeep"
+                  name="Roastingdeep"
+                  value="深焙"
+                  class="checkbox roastingOption"
+                />
+                <label for="Roastingdeep" class="ring"></label>
+                <p>
+                  <span class="a-title-cn">深焙</span>
+                  <span class="a-title-en">City Roast</span>
+                </p>
+              </item>
+              <item class="step-one-checkbox">
+                <input
+                  type="checkbox"
+                  id="Roastingother"
+                  name="Roastingother"
+                  value="不限定焙度"
+                  class="checkbox roastingOption"
+                  checked
+                />
+                <label for="Roastingother" class="ring"></label>
+                <p class="a-title-cn">不限定焙度</p>
+              </item>
+            </tr>
+          </form>
+        </div>
+
+        <!-- -數據調整區 -->
+        <div class="step-two">
+          <item class="step-text">
+            <p class="e-h4">Step 2</p>
+            <p class="r-h5">選擇喜歡的感官項目程度</p>
+          </item>
+<!--數據調整條--酸值-->
+          <div class="slider-container">
+            <!-- 文字說明 -->
+            <div class="tooltip-sli">
+              <img src="image/_info.png" alt="Info Icon" class="info-icon" />
+              <span class="tooltip-slitext"
+                >優質的酸質會明亮活潑，如莓果或是甜檸檬等多樣性的酸質，能提升咖啡的豐富性；負面的酸質就像未熟水果或醋酸，降低咖啡的品質。</span
+              >
+            </div>
+
+            <p>
+              <span class="a-title-cn">酸值</span>
+              <span class="a-title-en">Acidity</span>
+            </p>
+
+            <div class="value e-h4" id="value0">5</div>
+            <span class="slider-box">
+            <item class="slider-num r-h5">
+              <p>1</p>
+              <p>5</p>
+              <p>9</p>
+            </item>
+            <input
+              type="range"
+              min="1"
+              max="9"
+              value="5"
+              class="slider"
+              id="slider0"
+            />
+            <item class="slider-num r-h5">
+              <p>低</p>
+              <p>中</p>
+              <p>高</p>
+            </item>
+          </span>
+          </div>
+<!--數據調整條--甜感-->
+          <div class="slider-container">
+            <!-- 文字說明 -->
+            <div class="tooltip-sli">
+              <img src="image/_info.png" alt="Info Icon" class="info-icon" />
+              <span class="tooltip-slitext"
+                >高品質的咖啡豆在烘焙的過程中會產生一系列複雜的糖分和碳化物反應，賦予咖啡豆各種豐富的風味，包括輕微的甜感。</span
+              >
+            </div>
+
+            <p>
+              <span class="a-title-cn">甜感</span>
+              <span class="a-title-en">Sweetness</span>
+            </p>
+
+            <div class="value e-h4" id="value1">5</div>
+          <span class="slider-box">
+            <item class="slider-num r-h5">
+              <p>1</p>
+              <p>5</p>
+              <p>9</p>
+            </item>
+            <input
+              type="range"
+              min="1"
+              max="9"
+              value="5"
+              class="slider"
+              id="slider1"
+            />
+            <item class="slider-num r-h5">
+              <p>低</p>
+              <p>中</p>
+              <p>高</p>
+            </item>
+           </span>
+          </div>
+<!--數據調整條--口感-->
+          <div class="slider-container">
+            <!-- 文字說明 -->
+            <div class="tooltip-sli">
+              <img src="image/_info.png" alt="Info Icon" class="info-icon" />
+              <span class="tooltip-slitext"
+                >品嚐時口腔感受到咖啡的質地和觸感，可能帶有濃郁、醇厚、酸爽、苦澀等不同的特徵，每種觸感都可能在口腔中有好品質的觸覺感受。</span
+              >
+            </div>
+            <p>
+              <span class="a-title-cn">口感</span
+              ><span class="a-title-en">Mouth feel</span>
+            </p>
+
+            <div class="value e-h4" id="value2">5</div>
+            <span class="slider-box">
+            <item class="slider-num r-h5">
+              <p>1</p>
+              <p>5</p>
+              <p>9</p>
+            </item>
+            <input
+              type="range"
+              min="1"
+              max="9"
+              value="5"
+              class="slider"
+              id="slider2"
+            />
+            <item class="slider-num r-h5">
+              <p>低</p>
+              <p>中</p>
+              <p>高</p>
+            </item>
+            </span>
+          </div>
+        </div>
+
+<!--數據確認-->
+        <div class="step-three">
+          <item class="step-text">
+            <p class="e-h4">Step 3</p>
+            <p class="r-h5">確認數據</p>
+          </item>
+
+          <div class="checked-data">
+            <p class="c-h4">咖啡豆烘焙度</p>
+            <div id="roast-result" class="e-h4">不限定焙度</div>
+          </div>
+   
+          <div class="checked-data">
+            <p class="c-h4">酸值</p>
+            <div class="value e-h4" id="value0-1">5</div>
+          </div>
+          <div class="checked-data">
+            <p class="c-h4">甜感</p>
+            <div class="value e-h4" id="value1-1">5</div>
+          </div>
+          <div class="checked-data">
+            <p class="c-h4">口感</p>
+            <div class="value e-h4" id="value2-1">5</div>
+          </div>
+
+      <!--結果顯示-->
+      <div>
+        <table id="resultsTable">
+          <thead>
+            <tr>
+              <!--<th>組別</th>
+              <th>酸質</th>
+              <th>甜感</th>
+              <th>口感</th>
+              <th>總差異</th>
+              <th>均方根誤差</th>-->
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+         <!--計算按鈕-->
+            <button id="confirmButton">
+              <span class="a-title-cn">計算濾杯</span>
+              <span class="a-title-en">Confirm</span>
+            </button>
+         </div>
+      </nav>
+    </section>
+
+<!--結果資訊圖表區-->
+  <section class="section-three">
+    <div class="step-four">
+      <item class="step-text">
+        <p class="e-h4">Step 4</p>
+        <p class="r-h5">查看濾杯結構與3D模型</p>
+      </item>
+  
+      <div class="information">
+      <!--產生圖片-->
+        <div class="image-container">
+          <img
+            id="resultImage"
+            src="image/dripperinfro/gallery.png"
+            alt="Result Image"
+          />
+       </div>
+
+      <!-- 渲染 Three.js 場景的容器 -->
+        <div id="canvas-container">
+         <!-- 文字說明 -->
+          <div class="tooltip">
+            <img src="image/_info.png" alt="Info Icon" class="info-icon" />
+              <span class="tooltiptext"
+              >使用滑鼠改變模型視角<br />* 中鍵：縮放<br />* 左鍵：旋轉<br />#當滑鼠停於模型上時，模型會停止轉動。</span
+            >
+          </div>
+        </div>  
+      </div>
+    </section>
+
+   <!--網頁底部文字區-->
+   <section class="section-four">
+      <div class="down-text">
+        <p class="e-h4"><b>建議使用： </b>Chrome、Edge、Safari 或 Firefox 瀏覽器</p>
+        <p class="e-h4"><b>最佳解析度：</b> 1920 x 1080 px</p>
+      </div>
+    <p class="e-h4">Copyright©</p>
+   </section>
+
+    <!--原點鼠標樣式-->
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top">Top</button>
+
+    <!-- 引入自定義 JavaScript 文件 -->
+    <script type="module" src="js/point.js"></script>
+    <script type="module" src="js/jquery-3.7.1.js"></script>
+    <script type="module" src="js/script.js"></script>
+    <!-- DATA計算 -->
+    <script type="module" src="js/coffeemath.js"></script>
+    <!-- 引入數據檔案 -->
+    <script src="js/coffeedata.js"></script>
+  </body>
+</html>
