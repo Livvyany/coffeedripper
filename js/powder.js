@@ -1,9 +1,15 @@
 var canvas = $("#wrapper-canvas").get(0);
 
 var dimensions = {
-  width: $(window).width(),
-  height: $(window).height(),
+  width: 1920, // Set your fixed width here
+  height: 1000,
+  //width: $(window).width(),
+  //height: $(window).height(),
 };
+
+// Apply the fixed dimensions to the canvas
+canvas.width = dimensions.width;
+canvas.height = dimensions.height;
 
 //atter.use("matter-attractors");
 //Matter.use("matter-wrap");
@@ -238,17 +244,6 @@ function debounce(func, wait, immediate) {
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
-}
-
-//設置視窗大小
-function setWindowSize() {
-  let dimensions = {};
-  dimensions.width = $(window).width();
-  dimensions.height = $(window).height();
-
-  m.render.canvas.width = $(window).width();
-  m.render.canvas.height = $(window).height();
-  return dimensions;
 }
 
 let m = runMatter();
