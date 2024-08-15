@@ -409,7 +409,7 @@ document.getElementById("confirmButton").addEventListener("click", function () {
       resultsArray.push(closestGroupNumber);
     }
     //--顯示提示框--///
-    alert(message);
+    //alert(message);
 
     ///////////////////--動態更新模型路徑--//////////////////////////////
     var selectedData = data2.find(function (item) {
