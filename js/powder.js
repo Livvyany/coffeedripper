@@ -89,7 +89,7 @@ function runMatter() {
   // add some bodies that to be attracted
   //幾何形
   for (var i = 0; i < 150; i += 1) {
-    // 生成 100 个粒子
+    // 生成 100 個粒子
     let x = Common.random(0, render.options.width);
     let y = Common.random(0, render.options.height);
     let s =
@@ -104,10 +104,10 @@ function runMatter() {
       {
         mass: s / 80,
         friction: 0, //摩擦力
-        frictionAir: 0.01, //空气阻力
+        frictionAir: 0.01, //空氣阻力
         angle: Math.round(Math.random() * 360),
         render: {
-          fillStyle: "#db9928",
+          fillStyle: "#FF8A80",
           // strokeStyle: `#DDDDDD`,
           //lineWidth: 2,
         },
@@ -117,7 +117,7 @@ function runMatter() {
   }
   // add small circles
   for (var i = 0; i < 150; i += 1) {
-    // 生成100个小圆形粒子
+    // 生成100個小圆形粒子
     let x = Common.random(0, render.options.width);
     let y = Common.random(0, render.options.height);
     let r = Common.random(0, 4);
@@ -126,7 +126,7 @@ function runMatter() {
       friction: 0,
       frictionAir: 0.01,
       render: {
-        fillStyle: r > 0.3 ? `#bb4d00` : `#db9928`, //r大於0.3時:r小於0.3時
+        fillStyle: r > 0.3 ? `#FF4081` : `#FF3D00`, //r大於0.3時:r小於0.3時
       },
     });
 
@@ -135,7 +135,7 @@ function runMatter() {
 
   // add larger circles
   for (var i = 0; i < 20; i += 1) {
-    // 生成 20 个较大的圆形粒子
+    // 生成 20 個大的圆形粒子
     let x = Common.random(0, render.options.width);
     let y = Common.random(0, render.options.height);
     let r = Common.random(0, 4);
@@ -144,7 +144,7 @@ function runMatter() {
       friction: 0,
       frictionAir: 0.01,
       render: {
-        fillStyle: r > 0.3 ? `#dadd40` : `#f3f2bd`,
+        fillStyle: r > 0.3 ? `#FF6F00` : `#FFFF00ㄋ`,
       },
     });
 
@@ -152,16 +152,16 @@ function runMatter() {
   }
 
   // add dense circles
-  for (var i = 0; i < 10; i += 1) {
-    // 生成 10 个密度较大的圆形粒子
+  for (var i = 0; i < 30; i += 1) {
+    // 生成 30 個密度较大的圆形粒子
     let x = Common.random(0, render.options.width);
     let y = Common.random(0, render.options.height);
     var circle3 = Bodies.circle(x, y, Common.random(1, 2), {
-      mass: 1,
+      mass: 1.5,
       friction: 0.01,
       frictionAir: 0.01,
       render: {
-        fillStyle: `#55d080`,
+        fillStyle: `#8E24AA`,
       },
     });
 
